@@ -1,0 +1,235 @@
+{
+  "generatedAt": "2026-10-02T03:07:32.440Z",
+  "scope": "Synthetic database CRUD, immediate removal, and demotion in two fixtures; not HTTP or arbitrary schemas",
+  "results": [
+    {
+      "fixture": "invoices",
+      "name": "healthy_crud",
+      "scenario": "crud",
+      "expected": "pass",
+      "status": "pass",
+      "detail": "Expected permissions and stored effects observed"
+    },
+    {
+      "fixture": "invoices",
+      "name": "healthy_removal",
+      "scenario": "removed",
+      "expected": "pass",
+      "status": "pass",
+      "detail": "Expected permissions and stored effects observed"
+    },
+    {
+      "fixture": "invoices",
+      "name": "healthy_demotion",
+      "scenario": "demoted",
+      "expected": "pass",
+      "status": "pass",
+      "detail": "Expected permissions and stored effects observed"
+    },
+    {
+      "fixture": "invoices",
+      "name": "cross_insert",
+      "scenario": "crud",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write affected rows"
+    },
+    {
+      "fixture": "invoices",
+      "name": "cross_update",
+      "scenario": "crud",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write affected rows"
+    },
+    {
+      "fixture": "invoices",
+      "name": "cross_delete",
+      "scenario": "crud",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write affected rows"
+    },
+    {
+      "fixture": "invoices",
+      "name": "demoted_insert",
+      "scenario": "demoted",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write affected rows"
+    },
+    {
+      "fixture": "invoices",
+      "name": "demoted_update",
+      "scenario": "demoted",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write affected rows"
+    },
+    {
+      "fixture": "invoices",
+      "name": "demoted_delete",
+      "scenario": "demoted",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write affected rows"
+    },
+    {
+      "fixture": "invoices",
+      "name": "removed_insert",
+      "scenario": "removed",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write affected rows"
+    },
+    {
+      "fixture": "invoices",
+      "name": "missing_fixture",
+      "scenario": "crud",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Authorized actor fixture unavailable"
+    },
+    {
+      "fixture": "invoices",
+      "name": "constraint_error",
+      "scenario": "crud",
+      "expected": "error",
+      "status": "error",
+      "detail": "new row for relation \"invoices\" violates check constraint \"block_change\""
+    },
+    {
+      "fixture": "invoices",
+      "name": "duplicate_ids",
+      "expected": "unsupported",
+      "status": "unsupported"
+    },
+    {
+      "fixture": "invoices",
+      "name": "unsafe_write_column",
+      "expected": "unsupported",
+      "status": "unsupported"
+    },
+    {
+      "fixture": "invoices",
+      "name": "missing_write_value",
+      "expected": "unsupported",
+      "status": "unsupported"
+    },
+    {
+      "fixture": "tickets",
+      "name": "healthy_crud",
+      "scenario": "crud",
+      "expected": "pass",
+      "status": "pass",
+      "detail": "Expected permissions and stored effects observed"
+    },
+    {
+      "fixture": "tickets",
+      "name": "healthy_removal",
+      "scenario": "removed",
+      "expected": "pass",
+      "status": "pass",
+      "detail": "Expected permissions and stored effects observed"
+    },
+    {
+      "fixture": "tickets",
+      "name": "healthy_demotion",
+      "scenario": "demoted",
+      "expected": "pass",
+      "status": "pass",
+      "detail": "Expected permissions and stored effects observed"
+    },
+    {
+      "fixture": "tickets",
+      "name": "cross_insert",
+      "scenario": "crud",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write affected rows"
+    },
+    {
+      "fixture": "tickets",
+      "name": "cross_update",
+      "scenario": "crud",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write affected rows"
+    },
+    {
+      "fixture": "tickets",
+      "name": "cross_delete",
+      "scenario": "crud",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write affected rows"
+    },
+    {
+      "fixture": "tickets",
+      "name": "demoted_insert",
+      "scenario": "demoted",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write affected rows"
+    },
+    {
+      "fixture": "tickets",
+      "name": "demoted_update",
+      "scenario": "demoted",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write affected rows"
+    },
+    {
+      "fixture": "tickets",
+      "name": "demoted_delete",
+      "scenario": "demoted",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write affected rows"
+    },
+    {
+      "fixture": "tickets",
+      "name": "removed_insert",
+      "scenario": "removed",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write affected rows"
+    },
+    {
+      "fixture": "tickets",
+      "name": "missing_fixture",
+      "scenario": "crud",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Authorized actor fixture unavailable"
+    },
+    {
+      "fixture": "tickets",
+      "name": "constraint_error",
+      "scenario": "crud",
+      "expected": "error",
+      "status": "error",
+      "detail": "new row for relation \"tickets\" violates check constraint \"block_change\""
+    },
+    {
+      "fixture": "tickets",
+      "name": "duplicate_ids",
+      "expected": "unsupported",
+      "status": "unsupported"
+    },
+    {
+      "fixture": "tickets",
+      "name": "unsafe_write_column",
+      "expected": "unsupported",
+      "status": "unsupported"
+    },
+    {
+      "fixture": "tickets",
+      "name": "missing_write_value",
+      "expected": "unsupported",
+      "status": "unsupported"
+    }
+  ],
+  "mismatches": 0
+}

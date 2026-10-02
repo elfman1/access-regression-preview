@@ -1,0 +1,21 @@
+{
+  "name": "access-regression-benchmark",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node src/benchmark.mjs",
+    "demo": "node src/demo.mjs",
+    "baseline": "node src/baseline.mjs",
+    "test:mapping": "node src/mapping-benchmark.mjs",
+    "test:writes": "node src/write-benchmark.mjs",
+    "test:all": "npm test && npm run test:mapping && npm run test:writes && npm run baseline",
+    "report": "node src/report.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.5.8"
+  }
+}

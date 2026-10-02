@@ -1,0 +1,20 @@
+{
+  "table": "tickets",
+  "idColumn": "ticket_id",
+  "membershipTable": "workspace_access",
+  "membershipUserColumn": "principal_id",
+  "actorSetting": "app.principal_id",
+  "actor": "00000000-0000-4000-8000-000000000001",
+  "otherActor": "00000000-0000-4000-8000-000000000002",
+  "ownId": "10000000-0000-4000-8000-000000000001",
+  "otherId": "10000000-0000-4000-8000-000000000002",
+  "tenantColumn": "workspace_id",
+  "valueColumn": "subject",
+  "ownTenant": "20000000-0000-4000-8000-000000000001",
+  "otherTenant": "20000000-0000-4000-8000-000000000002",
+  "newOwnId": "10000000-0000-4000-8000-000000000003",
+  "newOtherId": "10000000-0000-4000-8000-000000000004",
+  "writeValue": "Synthetic changed",
+  "membershipRoleColumn": "is_admin",
+  "memberRole": false
+}

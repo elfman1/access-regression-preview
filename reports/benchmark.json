@@ -1,0 +1,197 @@
+{
+  "generatedAt": "2026-10-01T04:28:02.105Z",
+  "engine": "PGlite 0.5.8",
+  "scope": "Synthetic PostgreSQL RLS only; no Supabase HTTP, JWT validation, Storage or Realtime coverage",
+  "results": [
+    {
+      "name": "healthy_read",
+      "scenario": "read",
+      "expected": "pass",
+      "status": "pass",
+      "detail": "Expected permissions observed",
+      "durationMs": 1423
+    },
+    {
+      "name": "healthy_anonymous",
+      "scenario": "anonymous",
+      "expected": "pass",
+      "status": "pass",
+      "detail": "Expected permissions observed",
+      "durationMs": 1071
+    },
+    {
+      "name": "healthy_insert",
+      "scenario": "insert",
+      "expected": "pass",
+      "status": "pass",
+      "detail": "Expected permissions observed",
+      "durationMs": 1106
+    },
+    {
+      "name": "healthy_update",
+      "scenario": "update",
+      "expected": "pass",
+      "status": "pass",
+      "detail": "Expected permissions observed",
+      "durationMs": 1105
+    },
+    {
+      "name": "healthy_delete",
+      "scenario": "delete",
+      "expected": "pass",
+      "status": "pass",
+      "detail": "Expected permissions observed",
+      "durationMs": 1059
+    },
+    {
+      "name": "healthy_move",
+      "scenario": "move",
+      "expected": "pass",
+      "status": "pass",
+      "detail": "Expected permissions observed",
+      "durationMs": 1106
+    },
+    {
+      "name": "healthy_removed",
+      "scenario": "removed",
+      "expected": "pass",
+      "status": "pass",
+      "detail": "Expected permissions observed",
+      "durationMs": 1200
+    },
+    {
+      "name": "healthy_demoted",
+      "scenario": "demoted",
+      "expected": "pass",
+      "status": "pass",
+      "detail": "Expected permissions observed",
+      "durationMs": 1234
+    },
+    {
+      "name": "rls_disabled",
+      "scenario": "read",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Other tenant invoice visible",
+      "durationMs": 1214
+    },
+    {
+      "name": "read_everyone",
+      "scenario": "read",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Other tenant invoice visible",
+      "durationMs": 1075
+    },
+    {
+      "name": "insert_everywhere",
+      "scenario": "insert",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write returned changed rows",
+      "durationMs": 1116
+    },
+    {
+      "name": "update_everywhere",
+      "scenario": "update",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write returned changed rows",
+      "durationMs": 1239
+    },
+    {
+      "name": "delete_everywhere",
+      "scenario": "delete",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write returned changed rows",
+      "durationMs": 1049
+    },
+    {
+      "name": "tenant_transfer",
+      "scenario": "move",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write returned changed rows",
+      "durationMs": 1057
+    },
+    {
+      "name": "stale_membership",
+      "scenario": "removed",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Second tenant fixture missing",
+      "durationMs": 1072
+    },
+    {
+      "name": "stale_owner_claim",
+      "scenario": "demoted",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write returned changed rows",
+      "durationMs": 1040
+    },
+    {
+      "name": "anonymous_read",
+      "scenario": "anonymous",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Anonymous invoice visible",
+      "durationMs": 1046
+    },
+    {
+      "name": "member_can_update",
+      "scenario": "demoted",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write returned changed rows",
+      "durationMs": 1074
+    },
+    {
+      "name": "member_can_delete",
+      "scenario": "demoted",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Forbidden write returned changed rows",
+      "durationMs": 1041
+    },
+    {
+      "name": "permissive_policy_bypass",
+      "scenario": "read",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Other tenant invoice visible",
+      "durationMs": 1084
+    },
+    {
+      "name": "empty_fixture",
+      "scenario": "read",
+      "expected": "fail",
+      "status": "fail",
+      "detail": "Authorized fixture missing",
+      "durationMs": 1016
+    },
+    {
+      "name": "broken_setup",
+      "scenario": "read",
+      "expected": "error",
+      "status": "error",
+      "detail": "function nonexistent_function() does not exist",
+      "durationMs": 1017
+    },
+    {
+      "name": "missing_table",
+      "scenario": "read",
+      "expected": "error",
+      "status": "error",
+      "detail": "relation \"invoices\" does not exist",
+      "durationMs": 1026
+    }
+  ],
+  "summary": {
+    "healthyControls": 8,
+    "deliberateBugs": 12,
+    "harnessControls": 3,
+    "mismatches": 0
+  }
+}

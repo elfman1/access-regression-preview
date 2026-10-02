@@ -1,0 +1,4 @@
+node_modules/
+vendor/supashield/*.mjs
+.env
+.env.*

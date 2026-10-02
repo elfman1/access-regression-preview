@@ -1,0 +1,20 @@
+{
+  "table": "invoices",
+  "idColumn": "id",
+  "membershipTable": "memberships",
+  "membershipUserColumn": "user_id",
+  "actorSetting": "app.user_id",
+  "actor": "alice",
+  "otherActor": "bob",
+  "ownId": "1",
+  "otherId": "2",
+  "tenantColumn": "org_id",
+  "valueColumn": "amount",
+  "ownTenant": "a",
+  "otherTenant": "b",
+  "newOwnId": "3",
+  "newOtherId": "4",
+  "writeValue": 321,
+  "membershipRoleColumn": "role",
+  "memberRole": "member"
+}

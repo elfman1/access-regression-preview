@@ -1,0 +1,98 @@
+{
+  "scope": "Two synthetic schemas; read/list/removal checks only, no general customer mapping support",
+  "results": [
+    {
+      "fixture": "invoices",
+      "variant": "healthy",
+      "status": "pass",
+      "expected": "pass",
+      "detail": "Expected permissions observed"
+    },
+    {
+      "fixture": "invoices",
+      "variant": "removed",
+      "status": "pass",
+      "expected": "pass",
+      "detail": "Expected permissions observed"
+    },
+    {
+      "fixture": "invoices",
+      "variant": "leak",
+      "status": "fail",
+      "expected": "fail",
+      "detail": "Other tenant record exposed"
+    },
+    {
+      "fixture": "invoices",
+      "variant": "missing_fixture",
+      "status": "fail",
+      "expected": "fail",
+      "detail": "Own fixture unavailable"
+    },
+    {
+      "fixture": "invoices",
+      "variant": "missing_table_name",
+      "status": "unsupported",
+      "expected": "unsupported"
+    },
+    {
+      "fixture": "invoices",
+      "variant": "unsafe_identifier",
+      "status": "unsupported",
+      "expected": "unsupported"
+    },
+    {
+      "fixture": "invoices",
+      "variant": "same_actor",
+      "status": "unsupported",
+      "expected": "unsupported"
+    },
+    {
+      "fixture": "tickets",
+      "variant": "healthy",
+      "status": "pass",
+      "expected": "pass",
+      "detail": "Expected permissions observed"
+    },
+    {
+      "fixture": "tickets",
+      "variant": "removed",
+      "status": "pass",
+      "expected": "pass",
+      "detail": "Expected permissions observed"
+    },
+    {
+      "fixture": "tickets",
+      "variant": "leak",
+      "status": "fail",
+      "expected": "fail",
+      "detail": "Other tenant record exposed"
+    },
+    {
+      "fixture": "tickets",
+      "variant": "missing_fixture",
+      "status": "fail",
+      "expected": "fail",
+      "detail": "Own fixture unavailable"
+    },
+    {
+      "fixture": "tickets",
+      "variant": "missing_table_name",
+      "status": "unsupported",
+      "expected": "unsupported"
+    },
+    {
+      "fixture": "tickets",
+      "variant": "unsafe_identifier",
+      "status": "unsupported",
+      "expected": "unsupported"
+    },
+    {
+      "fixture": "tickets",
+      "variant": "same_actor",
+      "status": "unsupported",
+      "expected": "unsupported"
+    }
+  ],
+  "mismatches": 0
+}

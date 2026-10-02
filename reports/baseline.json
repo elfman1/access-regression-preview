@@ -1,0 +1,39 @@
+{
+  "upstream": "https://github.com/Rodrigotari1/supashield",
+  "commit": "ab01656ba6e6664f6aca2879b3eec8270601b48d",
+  "scope": "Three SELECT probes through upstream core function with PGlite query adapter; not full CLI or comprehensive competitor benchmark",
+  "results": [
+    {
+      "case": "healthy",
+      "baseline": {
+        "result": "ALLOW"
+      },
+      "expectedBaseline": "ALLOW",
+      "exactRowCheck": "pass",
+      "visibleIds": [
+        1
+      ]
+    },
+    {
+      "case": "cross_tenant_read",
+      "baseline": {
+        "result": "ALLOW"
+      },
+      "expectedBaseline": "ALLOW",
+      "exactRowCheck": "fail",
+      "visibleIds": [
+        1,
+        2
+      ]
+    },
+    {
+      "case": "no_access",
+      "baseline": {
+        "result": "DENY"
+      },
+      "expectedBaseline": "DENY",
+      "exactRowCheck": "fail",
+      "visibleIds": []
+    }
+  ]
+}
