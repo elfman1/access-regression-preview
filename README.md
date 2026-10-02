@@ -38,6 +38,10 @@ The vendored SupaShield core SELECT probe is pinned to commit `ab01656ba6e6664f6
 
 A generic table-level ALLOW and an exact tenant-row assertion ask different questions. Our experiment illustrates that distinction; it is not a full CLI comparison or evidence of overall superiority. Developers can write equivalent expectations in SQL/pgTAP. We have not measured setup-time savings.
 
+## Want help adapting the tests?
+
+We are evaluating a **$149 one-time custom setup pilot** for one synthetic permission model. [Read the proposed scope and request a free fit check](PILOT.md). This is an interest check; no orders or payments are accepted yet.
+
 ## Feedback
 
 We are evaluating this with agency developers maintaining several Supabase applications. Useful feedback: what you use today, where these fixture mappings fail to fit, and how long setup takes. Use a GitHub issue with synthetic examples only. Do not post credentials, production data, customer names, or private schema details.
