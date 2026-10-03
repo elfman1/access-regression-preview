@@ -40,7 +40,7 @@ A generic table-level ALLOW and an exact tenant-row assertion ask different ques
 
 ## Want help adapting the tests?
 
-We are evaluating a **$149 one-time custom setup pilot** for one synthetic permission model. [Read the proposed scope and request a free fit check](PILOT.md). This is an interest check; no orders or payments are accepted yet.
+We are evaluating a **$149 one-time custom setup pilot** for one synthetic permission model. [See the pilot page and request a free fit check](https://access-regression.mrbuzi.chatgpt.site). The [full proposed scope](PILOT.md) is also available here. This is an interest check; no orders or payments are accepted yet.
 
 ## Feedback
 
