@@ -28,7 +28,7 @@ The examples test allowed and forbidden CRUD, record/list visibility, membership
 
 ## Scope and limits
 
-This is an early research sample, not a complete security scanner or a paid service. It tests synthetic database-level policies in PGlite. It does not validate signed JWTs, HTTP endpoints, a full Supabase deployment, Storage, Realtime, or production database parity. Passing checks do not establish that an app is secure. The cases were designed by us and are not a representative accuracy benchmark.
+This is a free early research sample, not a complete security scanner. Optional custom fixture setup is offered separately below. It tests synthetic database-level policies in PGlite. It does not validate signed JWTs, HTTP endpoints, a full Supabase deployment, Storage, Realtime, or production database parity. Passing checks do not establish that an app is secure. The cases were designed by us and are not a representative accuracy benchmark.
 
 Removal here means deleting membership, with immediate revocation. Demotion leaves read access and removes owner writes. Other applications may need different expectations. Ticket membership deactivation is not separately tested.
 
@@ -40,7 +40,7 @@ A generic table-level ALLOW and an exact tenant-row assertion ask different ques
 
 ## Want help adapting the tests?
 
-We are evaluating a **$149 one-time custom setup pilot** for one synthetic permission model. [See the pilot page and request a free fit check](https://access-regression.mrbuzi.chatgpt.site). The [full proposed scope](PILOT.md) is also available here. This is an interest check; no orders or payments are accepted yet.
+**Custom setup: $149 USD, one time.** Get a runnable test package for one agreed synthetic permission model, a report, rerun instructions, and one scoped revision. [Email Access Regression for a free fit check](mailto:shanabuzi@gmail.com?subject=Access%20Regression%20pilot) or read the [full scope](PILOT.md). No GitHub account is needed to inquire. We agree scope, acceptance checks, timing, and payment arrangements before any paid work; this repository has no checkout.
 
 ## Feedback
 
