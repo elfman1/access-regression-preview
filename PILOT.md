@@ -1,8 +1,8 @@
-# Custom access-test pilot — interest check
+# Custom access-test setup — $149 pilot
 
 Want repeatable checks for a permission model like the examples in this repository?
 
-We are evaluating a **$149 USD one-time setup pilot** for developers who want help adapting the sample to one tenant-owned table. This is a proposed price, not checkout or an accepted order. The free MIT sample stays free.
+**$149 USD, one time**, for developers who want help adapting the sample to one tenant-owned table. Request a free fit check below; we agree scope and payment arrangements before accepting an order. The free MIT sample stays free.
 
 ## Proposed deliverable
 
@@ -16,7 +16,9 @@ The initial package runs in PGlite. It is not a production Supabase assessment, 
 
 ## Request a fit check
 
-[Open a pilot-interest issue](https://github.com/elfman1/access-regression-preview/issues/new?template=pilot-interest.md).
+**Private inquiry:** [Email Access Regression](mailto:shanabuzi@gmail.com?subject=Access%20Regression%20pilot). Tell us your current test workflow, the recurring fixture task you want help with, and an invented example of the permissions you need. No GitHub account required. Do not send secrets, production data, or customer code.
+
+**Public alternative:** [Open a pilot-interest issue](https://github.com/elfman1/access-regression-preview/issues/new?template=pilot-interest.md).
 
 Describe your workflow and expected permissions using invented names only. All issues here are **public**. Do not include real customer identifiers, private schema or code, credentials, connection strings, or production records. No email address is required.
 
